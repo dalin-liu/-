@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="西餐廳,漢堡,薯條,六角">
+    <meta name="description" content="咬一口就無法忘懷的漢堡,七夕絕對無法錯過的好滋味,台灣本土蔬菜,專業米其林廚師">
+    <meta name="author" content="Dalin Liu,dyuman@hotmail.com">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="URL地址" />
+    <meta property="og:title" content="六角西餐廳" />
+    <meta property="og:image" content="圖片" />
+    <meta property="og:description" content="咬一口就無法忘懷的漢堡,七夕絕對無法錯過的好滋味" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <title>註冊頁</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="clearfix">
+            <div class="logo">
+                <h2>六角西餐廳</h2>
+            </div>
+            <a href="#" class="showmenu"><i class="fas fa-bars fa-lg"></i></a>
+            <ul class="topmenu">
+                <li><a href="#">特色</a></li>
+                <li><a href="#">主廚</a></li>
+                <li><a href="#">地圖</a></li>
+            </ul>
+        </header>
+        <div class="banner">
+            <div class="banner_text">
+                <h3>
+                    咬一口就無法忘懷的漢堡
+                </h3>
+                <p>七夕絕對無法錯過的好滋味</p>
+                <p>六角大漢堡</p>
+            </div>
+        </div>
+        <div class="register_container">
+            <h1>六角西餐廳</h1>
+            <h5>享受美食好味道</h5>
+            <div class="register_section bdAndsha">
+                <h6>REGISTER</h6>
+                <div class="flex">
+                    <div class="register_rule">
+                        <p>
+                            就是這樣條款：
+                        </p>
+                        <p>
+                            Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere
+                            vulputate.
+                            Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque,
+                            lacinia dui sed, ultricies sapien...
+                        </p>
+                    </div>
+                    <div class="register_form">
+                        <form action="register.php">
+                            <label for="email">Email Address*</label><br>
+                            <input type="email" name="email" class="w285"><br>
+                            <label for="password">Password*</label><br>
+                            <input type="password" name="password" class="w285"><br>
+                            <input type="password" name="password" class="w285"><br>
+                            <small>已經有帳號了？</small><br>
+                            <input type="submit" value="註冊">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="float_left">
+                <div class="about">
+                    <h4>關於 六角西餐廳</h4>
+                    <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim,
+                        pulvinar
+                        lobortis nibh lacinia at. </p>
+                </div>
+                <div class="contact">
+                    <h4>聯絡方式</h4>
+                    <ul>
+                        <li>高雄市中正五路到底</li>
+                        <li>+886 886886</li>
+                        <li>service@hexschool.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="float_right">
+                <div class="SocialMedia clearfix">
+                    <h1>六角西餐廳</h1>
+                    <a href="http://www.facebook.com.tw" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-square fa-2x" style="color: #3B5998"></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter-square fa-2x" style="color:#41ABE1"></i>
+                    </a>
+                    <a href="##" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-plus-square fa-2x"
+                            style="color: #DB4437"></i>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.showmenu').click(function (e) {
+            e.preventDefault();
+            $('.topmenu').toggleClass('show');
+        });
+    });
+</script>

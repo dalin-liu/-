@@ -1,0 +1,770 @@
+.container{
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+p{
+    font-size: 16px;
+    line-height: 1.3;
+    padding: 0 30px 30px 30px;
+    text-align: left;
+}
+
+header{
+    background-color: #000;
+    height: 56px;
+    position: relative;
+}
+
+header .logo{
+    float: left;
+    color: white;
+    line-height: 56px;
+    padding-left: 13px;
+    }
+header h2{
+    font-size: 18.3px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+header >a{
+    float: right;
+    margin-right: 22px;
+    color: white;
+    line-height: 56px;
+    display: block;
+}
+.topmenu{
+    position: absolute;
+    top: 56px;
+    background-color: #efe9e7;
+    width: 100%;
+    display: none;
+}
+
+.topmenu li{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+.topmenu a{
+    color: #3D1101;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Microsoft JhengHei Regular';
+}
+.show{
+    display: block;
+}
+@media (min-width:768px){
+    .container{
+        max-width: 1200px;
+    }
+    /* 修改header樣式 */
+    .topmenu{
+        position: static;
+        float: right;
+        width: auto;
+        display: block;
+        background-color: #000;
+        padding-right: 33px;
+    }
+    .showmenu{
+        display: none;
+    }
+    .topmenu li{
+        float: left;
+        padding: 0;
+        border-bottom: 2px solid #000; /*預留底線空間*/
+    }
+    .topmenu li:hover{
+        border-bottom: 2px solid lightgrey;
+    }
+    .topmenu a{
+        color: #fff;
+        width: 62px;
+        font-size: 16px;
+        line-height: 54px;
+        padding: 17px 15px;
+    }
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.banner{
+    height: 364px;
+    max-width: 100%;
+    background-image: url("web/assets/Bitmap@2x.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.banner_text{
+    height: 194px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, .35);
+    color: white;
+    font-family: 'Microsoft JhengHei Regular';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_text h3{
+    font-size: 36px;
+    margin-bottom: 16px;
+    line-height: 1.33;
+}
+.banner_text p{
+   text-align: center;
+   line-height:21px;
+   padding: 0;
+}
+@media (min-width:768px) {
+    /* 修改banner文字框樣式 */
+    .banner_text{
+        width: 460px;
+    }
+}
+.content_screct{
+    background-color: #efe9e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 31px 0;
+}
+.content_screct .secret_lineA{
+    width: 109px;
+    display: none;
+}
+.content_screct .secret_lineB{
+    width: 127px;
+    display: none;
+}
+.content_screct .secret_text p{
+    font-family:'Microsoft JhengHei Regular';
+    font-size: 20px;
+    color: #3D1101;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 12px 0 13px;
+    
+}
+.content_screct_item{
+    background-color: #efe9e7;
+    text-align: center;
+    color:#3D1101;
+    font-family:'Microsoft JhengHei Regular';
+}
+.content_screct_item img{
+    border-radius: 50%;
+}
+.content_screct_item h6{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 11px;
+    line-height: 24px;
+}
+@media(min-width:768px){
+    /* 修改好吃的秘訣樣式 */
+    .content_screct .secret_lineA{
+        display: block;
+    }
+    .content_screct .secret_lineB{
+        display: block;
+    }
+    .content_screct_item{
+        display: flex;
+    }
+}
+@media (min-width:820px){
+    /* 避免縮小至820px時因圖片尺寸關係會跑版 */
+    /* 修改今日主廚樣式 */
+    .main_chef{
+        display: flex;
+    }
+    .chef_img{
+        width:48%;
+        margin-left: 2%;
+    }
+
+    .chef_intro{
+       width: 49%;
+    }    
+}
+.main_chef{
+    background-color: #3D1101;
+    text-align: center;
+    color: #EFE9E7;
+    font-family:'Microsoft JhengHei Regular';
+}
+
+.chef_img{
+    width:100%;
+}
+.chef_img img{
+    max-width: 100%;
+    height: auto;
+}
+.main_chef .chef_intro{
+    text-align: left;
+    padding: 16px 31px 30px 30px;
+}
+.chef_intro h5{
+    font-size: 20px;
+    line-height: 32px;
+}
+.chef_intro h6{
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 16px;
+}
+.chef_intro p{
+    padding: 0;
+}
+.cus_feedback_title{
+    background-color: #efe9e7;
+}
+.cus_feedback_title p{
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    font-family:'Microsoft JhengHei Regular';
+    padding: 50px 0 32px 0;
+    color:#3D1101;
+}
+.cus_feedback{
+    padding-bottom: 41px;
+    background-color: #efe9e7;
+}
+.cus_feedback>.item{
+    color:#3D1101;
+    font-family:'Microsoft JhengHei Regular';
+    display: flex;
+    max-width: 100%;
+}
+
+.cus_feedback img{
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+    padding:0 13px 0 10px;
+}
+.cus_feedback h6{
+    font-size: 18px;
+   padding-bottom: 19px;
+}
+.cus_feedback p{
+  padding: 0 10px 16px 0;
+}
+
+.align_r{
+    /* 感想人名靠右 */
+    text-align: right;
+    padding:0 0 30px 0;
+}
+.booking{
+    background-color: #FAFAFA;
+    padding: 0 11px 30px 11px;
+}
+.booking_title p{
+    font-size: 24px;
+    color:#3D1101;
+    text-align: center;
+    font-family:'Microsoft JhengHei Regular';
+    padding: 43px 0 30px 0;
+}
+.map_img{
+    padding-bottom: 30px;
+}
+.map_img img{
+    max-width: 100%;
+}
+.form {
+    padding: 0 11px 50px 11px;
+    color:#3D1101;
+    background-color: #FAFAFA;
+} 
+.form label{
+    /* 字體無法顯示 */
+    font-family:'PingFangTC-Light, sans-serif';  
+    font-size: 14px;
+    line-height: 20px;
+}
+.form small{
+    font-size: 14px;
+}
+.form .radio{
+    height: 16px;
+    width: 16px;
+}
+.form input[type=text],.form input[type=number],.form input[type=email]{
+    width: 300px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #CCCCCC ;
+    box-shadow: 0px -1px 0px 0px #ECECEC;
+    margin-bottom: 12px;
+    margin-top: 6px;
+    font-size: 16px;
+    color: #4a4a4a;
+    font-family:'PingFangTC-Light, sans-serif';
+}
+.form input[type=text]:focus,
+.form input[type=number]:focus,
+.form input[type=email]:focus{
+    border: 2px solid #333;
+    background-color: lightgoldenrodyellow;
+}
+.form input[type=radio]{
+    margin: 8px 16px 0 6px;
+}
+
+.form .button{
+    color: #fff;
+    width: 70px;
+    height: 32px;
+    border-radius: 3px;
+    margin-top: 30px;
+    font-size: 14px;
+    float: right;
+    cursor:pointer;   
+}
+@media(min-width:768px){
+    /* 修改感想樣式 */
+    .cus_feedback{
+        display: flex;
+        padding-bottom: 34px;
+    }
+    /* 修改地圖樣式 */
+    .booking{
+        display: flex;
+        padding: 0 40px 0 40px;
+    }   
+    .booking_title p{
+        padding: 50px 0 38px 0;
+    }
+    .map_img{
+        max-width: 50%;
+    }
+    .map_img img{
+        max-width: 460px;
+    }
+    .form{
+        width: 50%;
+        padding: 0 0px 50px 22px;
+        overflow: hidden;
+    }
+    .form input[type=text],.form input[type=number],.form input[type=email]{
+        width: 460px;
+        height: 32px;
+    }
+}
+
+#cancel{
+    background-color: #777;
+    margin-left: 11px;
+}
+#send{
+    background-color: #F56C23;
+}
+footer{
+    color: #3D1101;
+    background-color: #efe9e7;
+    padding: 50px 0 50px 11px;
+}
+footer h1{
+    font-size: 49px;
+    text-align: right;
+    margin: 30px 0 22px 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    min-width: 245px;
+}
+footer h4{
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-family:'Microsoft JhengHei Regular';
+}
+footer p{
+    text-align: left;
+    padding: 0 0 30px 0;
+    font-family:'Microsoft JhengHei Regular';
+    max-width: 299px;
+}
+footer .contact ul{
+    list-style: disc;
+}
+footer ul li{
+    line-height: 21px;
+    font-size: 16px;
+    font-family:'Microsoft JhengHei Regular';
+    list-style-type: disc;
+    list-style-position: inside;
+}
+footer .fab{
+    float: right;
+    margin-left: 11px;
+}
+.float_right{
+    margin-right: 10px;
+}
+@media(min-width:768px){
+    /* 修改footer樣式 */
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .float_left{
+        display: flex;
+    }
+    .float_right{
+        margin-right: 42px;
+    }
+    footer p{
+        max-width: 299px;
+    }
+    footer ul li{
+        width: 299px;
+    }
+    footer h1{
+        margin: 0 0 22px 0;
+    }
+}
+
+/* 首頁項目到這裡 */
+/* 這裡是購物車頁 */
+.cart_content{
+    background-color: #efe9e7;
+    padding-top: 48px;
+    box-sizing: border-box;
+}
+.sidemenu{
+    max-width: 100%;
+}
+.sidemenu_title{
+    padding: 15px 0;
+}
+.sidemenu h5{
+    font-size: 20px;
+    color: #3D1101;
+    text-align: center;
+    font-family:'Microsoft JhengHei Regular'
+}
+.sidemenu_menu{
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.sidemenu_menu li a{
+    text-decoration: none;
+    font-size: 16px;
+    text-align: left;
+    color: #3D1101;
+    line-height: 32px;
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+    border-bottom: 2px solid #3D1101;
+    padding: 10px 0;
+    font-family:'Microsoft JhengHei Regular'
+}
+@media(min-width:768px){
+    .cart_content{
+        display: flex;
+        justify-content: space-around;
+    }
+    .sidemenu{
+        width: 23%;
+        max-width: 220px;
+    }
+    .sidemenu_title h5{
+        text-align: left;
+    }
+    .sidemenu_menu li a:hover{
+        color: #fff;
+        background-color: #3D1101;
+    }
+}
+.main{
+    padding-bottom: 10px;
+}
+.main_top{
+    /* for內部元件垂直置中 */
+    position: relative;
+}
+
+.main_top .searchbar{
+    text-align: center;
+    width: 99%;
+    font-size: 0;
+}
+.main_top .search{
+    height: 28px;
+    width: 260px;
+    border: 2px solid #3D1101;
+    border-radius: 2px;
+
+}
+.searchbar .fas{
+    border: 2px solid #3D1101;
+    line-height: 30px;
+    border-radius: 1px;
+    background-color: #3d1101;
+    color: white;
+    font-size: 19px;
+}
+.main_top .buycart{
+    padding: 20px 10px 30px 0;
+    float: right;   
+}
+.buycart p{
+    font-size: 20px;
+    line-height: 32px; /*文字垂直置中*/
+    color: #3D1101;
+    display: inline-block;
+    font-family:'Microsoft JhengHei Regular';
+    padding: 0; 
+}
+.buycart p::after{
+    content: '|';
+    padding: 0 17px 0 12px;
+}
+.item_gruop{
+    /* main_top沒有高度，用下方區塊的上margin去推開距離 */
+    margin-top: 65px;
+}
+.main_item{
+    text-align: center;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, .16);
+    width: 95%;
+    margin:10px auto;
+    position: relative;
+    padding-bottom: 10px;
+}
+.addToCart{
+    background-color:lightgreen;
+    border: 1px solid red;
+}
+.main_item img{
+    width: 100%;
+    margin-bottom: 11px;
+}
+.main_item .far,.main_item .fas{
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    color: #fff;
+    
+}
+/* CSS畫出心型 */
+/* .heart{
+    background-color: red;
+    height: 10px;
+    transform: rotate(-45deg);
+    width: 10px;
+}
+.heart:before,
+.heart:after {
+    content: "";
+    background-color:rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+}
+.heart:before {
+    top: -15px;
+    left: 0;
+  } */
+.main_item h5{
+    color: #3D1101;
+    font-size: 20px;
+    line-height: 27px;
+    font-family:'Microsoft JhengHei Regular'
+}
+.main_item p{
+    font-size: 16px;
+    color: #3D1101;
+    text-align: center;
+    font-family:'Microsoft JhengHei Regular'
+}
+small{
+    font-size: 12px;
+    line-height: 16px;
+    color: #3D1101;
+    text-align: center;
+    font-family:'Microsoft JhengHei Regular'
+}
+.main_item hr{
+    width: 91px;
+    color: #3D1101;
+    height: 3px;
+}
+.main_item input{
+    width: 280px;
+    height: 28px;
+    border: 2px solid #FF5E45;
+    color: #ff5e45;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 3px;
+    font-family:'Microsoft JhengHei Regular'
+}
+
+@media(min-width:768px){
+    .main{
+        width: 74%;
+    }
+    .main_top{
+        width: 95%;
+    }
+    .main_top .buycart{
+        padding: 0px;
+        /* 為了與searchbar垂直置中 */
+        position: absolute;
+        transform: translateY(-50%);
+        right: 0;
+    }
+    .main_top .searchbar{
+        text-align: left;
+        /* 為了與buycart垂直置中 */
+        position: absolute;
+        transform: translateY(-50%);
+        left: 10px;    /*為了與下方對齊 */
+    }
+    .main_top .search{
+        width: 360px;
+    }
+    .item_gruop{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main_item{
+        max-width:250px;
+        margin:10px; /*消除左右auto置中對齊*/
+    }
+    .main_item input{
+        width: 200px;
+    }
+}
+@media(min-width:850px){
+    .main_top .search{
+        width: 420px;
+    }
+}
+
+/* 登入頁開始 */
+.register_container{
+    background: #EFE9E7;
+    width: 100%;
+    padding-top: 50px;
+    /* box-sizing: border-box; */
+}
+.register_section{
+    margin: auto;
+}
+.register_container h1,
+.register_container h5,
+.register_form p{
+    font-size: 49px;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #3D1101;
+}
+.register_container h5{
+    font-size: 20px;
+    margin: 5px 0 35px 0;
+}
+.register_form{
+    width: 300px;
+    height: 270px; 
+    padding: 15px;
+    margin: 0 auto;
+}
+.bdAndsha{
+    /* 加上框線及陰影 */
+    border-top: 3px solid #FF5E45 ;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+}
+.register_form p{
+    font-size: 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.register_form small{
+    font-size: 14px;
+    color: #ff5e45;
+    font-family:'Microsoft JhengHei Regular';
+}
+.register_form input[type=email],
+.register_form input[type=password]{
+    height: 15px;
+    border-radius: 3px;
+    box-shadow: 0px 1px 0px 0px #ECECEC;
+}
+.register_form input[type=email]:focus,
+.register_form input[type=password]:focus{
+    border: 2px solid #333;
+    background-color: lightgoldenrodyellow;
+}
+.w270{
+    width: 270px;
+}
+.register_form label{
+    color: #3D1101;
+    font-size: 16px;
+    font-family:'Microsoft JhengHei Regular';
+}
+.register_form input[type=email]{
+    margin-bottom: 15px;
+}
+.register_form input[type=submit]{
+   width: 125px;
+   height: 32px;
+   border-radius: 3px;
+   color: #fff;
+   font-size: 14px;
+   margin-top: 30px; 
+   line-height: 20px;
+}
+.register_form input[type=submit]:nth-last-child(1){
+    background-color: #F56C23;
+}
+.register_form input[type=submit]:nth-last-child(2){
+    background-color: rgba(0,0,0,0.35);
+    margin-right: 20px;
+}
+/* 登入頁結束 */
+/* 註冊頁開始 */
+.register_section{
+    max-width: 620px;
+}
+.register_section h6{
+    font-size: 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #3d1101;
+    text-align: center;
+}
+.register_rule p{
+    font-size: 18px;
+    color: #3d1101;
+    padding: 0;
+    font-family:'Microsoft JhengHei Regular';
+}
+.register_form input[type=password]:nth-last-child(5){
+    margin-top: 12px;
+}
+.w285{
+    width: 285px;
+}
+@media(min-width:768px){
+    .flex{
+        display: flex;
+    }
+}
